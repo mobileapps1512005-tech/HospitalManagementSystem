@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:isScrollContainer="true"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true"
+    android:background="@color/white"
+    tools:context=".DoctorManageTask.HealDietUpdateActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            android:elevation="4dp"
+            app:cardMaxElevation="4dp"
+            app:cardElevation="4dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/healthyfood"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"/>
+                <EditText
+                    android:id="@+id/edName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Patient Name"
+                    android:textColorHint="@color/black"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="30sp"
+                    android:background="@drawable/edittextcornerround"
+                    android:drawableLeft="@drawable/outline_account_circle_24"
+                    android:drawablePadding="10sp"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:padding="12sp"/>
+                <EditText
+                    android:id="@+id/edAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Patient Age"
+                    android:textColorHint="@color/black"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10sp"
+                    android:background="@drawable/edittextcornerround"
+                    android:drawableLeft="@drawable/outline_apps_24"
+                    android:drawablePadding="10sp"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:padding="12sp"/>
+                <EditText
+                    android:id="@+id/edMorning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Morning Heal Name"
+                    android:textColorHint="@color/black"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10sp"
+                    android:background="@drawable/edittextcornerround"
+                    android:drawableLeft="@drawable/outline_bath_outdoor_24"
+                    android:drawablePadding="10sp"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:padding="12sp"/>
+                <EditText
+                    android:id="@+id/edLunch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Lunch Heal Name"
+                    android:textColorHint="@color/black"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10sp"
+                    android:background="@drawable/edittextcornerround"
+                    android:drawableLeft="@drawable/outline_bath_outdoor_24"
+                    android:drawablePadding="10sp"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:padding="12sp"/>
+                <EditText
+                    android:id="@+id/edDinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Dinner Heal Name"
+                    android:textColorHint="@color/black"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10sp"
+                    android:background="@drawable/edittextcornerround"
+                    android:drawableLeft="@drawable/outline_bath_outdoor_24"
+                    android:drawablePadding="10sp"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:padding="12sp"/>
+                <EditText
+                    android:id="@+id/edDoctor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Doctor Name"
+                    android:textColorHint="@color/black"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10sp"
+                    android:background="@drawable/edittextcornerround"
+                    android:drawableLeft="@drawable/outline_account_circle_24"
+                    android:drawablePadding="10sp"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:padding="12sp"/>
+                <EditText
+                    android:id="@+id/edPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Doctor Contact Number"
+                    android:textColorHint="@color/black"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10sp"
+                    android:background="@drawable/edittextcornerround"
+                    android:drawableLeft="@drawable/outline_add_call_24"
+                    android:drawablePadding="10sp"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:padding="12sp"/>
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="40dp"
+                    android:backgroundTint="#FF1100"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"
+                    android:text="SUBMIT"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+
+</ScrollView>

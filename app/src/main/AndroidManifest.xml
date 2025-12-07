@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HospitalManagementSystem">
+        <activity
+            android:name=".GrievanceActivity.PatientProblemGrievanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BloodManage.CheckBloodDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BloodManage.UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutManage.ResumeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenActivity.ForgetPasswordActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".SplashScreenActivity.LoginActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".SplashScreenActivity.RegisterActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".SplashScreenActivity.SplashScreenActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GrievanceActivity.UpdateGrievanceActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".GrievanceActivity.GrievanceActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".PatientBillings.UpdateBillingActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".DrawerLayout.billingActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+
+        <activity
+            android:name=".PatientBillings.BillingTabViewActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".HomeDeliveryMedicine.PatientViewMedicineHomeDeliveryActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".MedicineOrderTaskManage.OnlyRejectMedicineOrderActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".MedicineOrderTaskManage.AcceptOrderRequestActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".MedicineOrderTaskManage.OwnerCheckMedicineBookingActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AddLabTestReports.CheckLabReportsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AddLabTestReports.OnlyLabReportRejectActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AddLabTestReports.OnlyAcceptLabReportActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AddLabTestReports.LabAppointmentBookingActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AddLabTestReports.PatientViewLabReportTabActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AddLabTestReports.LabReportStatusActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AddLabTestReports.LabUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MedicineReturnsPolicy.MedicineReturnRejectActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".MedicineReturnsPolicy.MedicineReturnAcceptActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".MedicineReturnsPolicy.ReturnMedicineBookActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".MedicineReturnsPolicy.PatientBookingMedicineReturnActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".MedicineReturnsPolicy.OwnerCheckMedicineStatusActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".MedicineReturnsPolicy.MedicineReturnUpdateOwnerActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".MedicineReturnsPolicy.MedicineReturnsPolicyTabActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AddCanteenDetailManage.PatientCheckFoodDeliveredActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AddCanteenDetailManage.CanteenOwnerAcceptFoodActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AddCanteenDetailManage.FoodStatusSecurityActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AddCanteenDetailManage.PatientBookingOrderMenuItemsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AddCanteenDetailManage.PatientCanteenViewActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AddCanteenDetailManage.CanteenAppointmentActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AddCanteenDetailManage.CanteenMenuUpdateActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AddCanteenDetailManage.CanteenStatusActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AddBodyCheckUpCost.CheckApprovalRejectActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AddBodyCheckUpCost.CheckApprovalActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".HomeDeliveryMedicine.BookingPageOrganActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AddBodyCheckUpCost.PatientCheckUpAppointmentActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AddBodyCheckUpCost.PatientBookingCheckupTabActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".MedicalReports.PatientCheckMedicalReportsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".MedicalReports.UpdateMedicalActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AddBodyCheckUpCost.CheckAppointmentStatusActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AddBodyCheckUpCost.BodyCheckupStatusActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AddBodyCheckUpCost.AddBodyCheckupActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".MedicineOrderTaskManage.MedicineUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PharmacyManageTask.pharmacyViewTabActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".PharmacyManageTask.PharmacyUpdateActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".PharmacyManageTask.PharmacyStatusActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AmbulanceManageTask.AmbulanceCancelActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AmbulanceManageTask.AmbulanceApprovalAmbulanceActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AmbulanceManageTask.AmbulanceBookingForPatientActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AmbulanceManageTask.AmbulanceBookingStatusActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AmbulanceManageTask.AmbulanceViewTabActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AmbulanceManageTask.AmbulanceUpdateActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AmbulanceManageTask.AppointmentStatusActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AmbulanceManageTask.AmbulanceStatusActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".InsuranceModule.InsuranceUpdateActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".NurseManageTask.PatientCallNurseActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".DoctorManageTask.HealDietUpdateActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".DoctorManageTask.DoctorSuggestHealDietActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".DoctorManageTask.TabViewDoctorAppointmentActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".HomeDeliveryMedicine.HospitalViewActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".NurseManageTask.UpdateNurseActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".NurseManageTask.NurseStatusActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".HospitalManageTask.HospitalDetailsUpdateActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".DoctorManageTask.DrCancelAppointmentActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".DoctorManageTask.AppointmentConfirmActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".DoctorManageTask.AppointmentActivityActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".DoctorManageTask.UpdateDoctorDetails"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".DoctorManageTask.DoctorActivityActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".DoctorManageTask.DoctorStatusActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".HomeDeliveryMedicine.DeliveryConFirmActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".HomeDeliveryMedicine.OtpActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".HomeDeliveryMedicine.HomeDeliveryStatusActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".MedicineOrderTaskManage.CheckMedicineActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".InsuranceModule.TabClaimInsuranceActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".InsuranceModule.InquiryInsuranceActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".BloodManage.AddBloodActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AddCanteenDetailManage.AddCanteenActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AddLabTestReports.LabReportsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".MedicalReports.TestReportActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".HomeDeliveryMedicine.HomeDeliveryActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".MedicineOrderTaskManage.MedicineOrdersActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".PharmacyManageTask.PharmacyActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".NurseManageTask.AddTabNurseActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".AmbulanceManageTask.AddAmbulanceActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".DoctorManageTask.AddTabDoctorActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".HospitalManageTask.AddHospitalActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".AdminModule.AdminModule"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".NavigationBar.PrescriptionActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".BenefitActivity.Benefit"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW"/>
+                <category
+                    android:name="android.intent.category.DEFAULT"/>
+                <category
+                    android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:scheme="com.example.hospitalmanagementsystem"
+                    android:host="example.com"
+                    android:path="/open"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".MainActivity.MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+    </application>
+
+</manifest>

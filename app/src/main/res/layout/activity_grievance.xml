@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".GrievanceActivity.GrievanceActivity">
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabLayout"
+        android:background="@drawable/custtomtab"
+        app:tabPadding="25dp"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        app:tabTextColor="@color/black"
+        app:tabIndicatorColor="@color/tabIndicator"
+        app:tabSelectedTextColor="@color/tabSelectedTextColor"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameLayout"/>
+
+
+</LinearLayout>

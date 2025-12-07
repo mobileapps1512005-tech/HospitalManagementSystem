@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:elevation="4dp"
+    app:cardElevation="0dp"
+    app:cardMaxElevation="0dp"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Left side image -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/foods" />
+
+            <!-- Spacer to push images apart -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <!-- Right side image -->
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/callImg"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/telephone">
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Menu Items Name"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="name"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginBottom="5sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:gravity="end"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="15dp">
+
+                <ImageView
+                    android:id="@+id/UpImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/outline_arrow_drop_up_24"
+                    android:layout_marginEnd="8dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/DownImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/outline_arrow_drop_down_24"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order item Half Plate"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvHalf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="half"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order item Half Plate Price"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvHalfPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="half"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order item Full Plate"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvFull"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="full"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order item Full Plate Price"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvFullPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="half"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order item Discount"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvDiscount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="dicsount"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Combo Menu Items"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvCombo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="combo"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact No"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="phone"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:isScrollContainer="true"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true"
+    tools:context=".AmbulanceManageTask.AddAmbulanceActivity">
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabLayout"
+        android:background="@drawable/custtomtab"
+        app:tabPadding="25dp"
+        app:tabTextColor="@color/black"
+        app:tabIndicatorColor="@color/tabSelectedTextColor"
+        app:tabSelectedTextColor="@color/tabSelectedTextColor"
+        android:layout_gravity="fill"
+        app:tabMode="fixed"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameLayout">
+    </FrameLayout>
+
+
+
+</LinearLayout>

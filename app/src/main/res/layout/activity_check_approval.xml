@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:isScrollContainer="true"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true"
+    android:background="@color/white"
+    tools:context=".AddBodyCheckUpCost.CheckApprovalActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardMaxElevation="0dp"
+            android:elevation="4dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="#FFFFFF"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="9sp"
+            android:layout_marginRight="9sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/bodysspreview" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Please Enter Hospital Name"
+                    android:textColorHint="@color/black"
+                    android:textStyle="bold"
+                    android:inputType="text"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="20dp"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/outline_apartment_24"
+                    android:padding="12dp"
+                    android:background="@drawable/edittextcornerround"/>
+                <EditText
+                    android:id="@+id/edPart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Please Enter Apart Name Checkup"
+                    android:textColorHint="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:inputType="text"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/outline_bucket_check_24"
+                    android:padding="12dp"
+                    android:background="@drawable/edittextcornerround"/>
+                <EditText
+                    android:id="@+id/edPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Please Enter CheckUp Price"
+                    android:textColorHint="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginBottom="2dp"
+                    android:inputType="text"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/outline_currency_rupee_24"
+                    android:padding="12dp"
+                    android:background="@drawable/edittextcornerround"/>
+                <Spinner
+                    android:id="@+id/spinDiscount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/customspinner"/>
+                <EditText
+                    android:id="@+id/edPhone"
+                    android:inputType="phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Please Enter Contact Number"
+                    android:textColorHint="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/outline_add_call_24"
+                    android:padding="12dp"
+                    android:background="@drawable/edittextcornerround"/>
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="15sp"
+                    android:textSize="20dp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:text="Submit"
+                    android:backgroundTint="#FF1200"
+                    android:layout_marginBottom="70sp"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+
+</ScrollView>

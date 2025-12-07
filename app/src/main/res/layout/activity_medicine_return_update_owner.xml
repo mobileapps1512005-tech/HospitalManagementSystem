@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:isScrollContainer="true"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true"
+    tools:context=".MedicineReturnsPolicy.MedicineReturnUpdateOwnerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15sp"
+                app:cardMaxElevation="0dp"
+                app:cardBackgroundColor="#FFFFFF"
+                android:elevation="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="60dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="110sp"
+                        android:layout_height="110sp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5sp"
+                        android:src="@drawable/medicinepreview" />
+
+                    <EditText
+                        android:id="@+id/edName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@drawable/edittextcornerround"
+                        android:drawableLeft="@drawable/outline_account_circle_24"
+                        android:drawablePadding="10sp"
+                        android:hint="Enter Hospital Name"
+                        android:padding="12sp"
+                        android:textColorHint="@color/black"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinCondition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@drawable/customspinner"/>
+
+                    <EditText
+                        android:id="@+id/edPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@drawable/edittextcornerround"
+                        android:drawableLeft="@drawable/outline_add_call_24"
+                        android:drawablePadding="10sp"
+                        android:hint="Enter Patient Contact Number"
+                        android:padding="12sp"
+                        android:textColorHint="@color/black"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnSubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="60dp"
+                        android:backgroundTint="#FF1100"
+                        android:text="Submit"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

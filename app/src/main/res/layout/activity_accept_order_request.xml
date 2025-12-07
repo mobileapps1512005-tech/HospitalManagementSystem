@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:isScrollContainer="true"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true"
+    android:background="@color/white"
+    tools:context=".MedicineOrderTaskManage.AcceptOrderRequestActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15sp"
+                app:cardMaxElevation="0dp"
+                app:cardBackgroundColor="#FFFFFF"
+                android:elevation="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="110sp"
+                        android:layout_height="110sp"
+                        android:src="@drawable/medicinepreview"
+                        android:layout_gravity="center"
+                        android:layout_margin="5sp"/>
+
+                    <EditText
+                        android:id="@+id/edName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@drawable/edittextcornerround"
+                        android:drawableLeft="@drawable/outline_account_circle_24"
+                        android:drawablePadding="10sp"
+                        android:hint="Enter Patient Name"
+                        android:padding="12sp"
+                        android:textColorHint="@color/black"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@drawable/edittextcornerround"
+                        android:drawableLeft="@drawable/outline_attach_email_24"
+                        android:drawablePadding="10sp"
+                        android:hint="Enter Patient Email"
+                        android:padding="12sp"
+                        android:textColorHint="@color/black"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@drawable/edittextcornerround"
+                        android:drawableLeft="@drawable/outline_add_call_24"
+                        android:drawablePadding="10sp"
+                        android:hint="Enter Patient Contact Number"
+                        android:padding="12sp"
+                        android:textColorHint="@color/black"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@drawable/edittextcornerround"
+                        android:drawableLeft="@drawable/outline_add_location_alt_24"
+                        android:drawablePadding="10sp"
+                        android:hint="Enter Patient Location"
+                        android:padding="12sp"
+                        android:textColorHint="@color/black"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edDeliveryLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@drawable/edittextcornerround"
+                        android:drawableLeft="@drawable/outline_add_location_alt_24"
+                        android:drawablePadding="10sp"
+                        android:hint="Enter Delivery Location"
+                        android:padding="12sp"
+                        android:textColorHint="@color/black"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvOrderDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Select Order Date"
+                        android:textStyle="bold"
+                        android:textColorHint="@color/black"
+                        android:textSize="13dp"
+                        android:drawableLeft="@drawable/outline_calendar_month_24"
+                        android:drawablePadding="10sp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginBottom="2dp"
+                        android:inputType="none"
+                        android:background="@drawable/edittextcornerround"
+                        android:padding="12sp"/>
+                    <TextView
+                        android:id="@+id/tvRequiredDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Select Required Date"
+                        android:textStyle="bold"
+                        android:textColorHint="@color/black"
+                        android:inputType="none"
+                        android:textSize="13dp"
+                        android:drawableLeft="@drawable/outline_calendar_month_24"
+                        android:drawablePadding="10sp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@drawable/edittextcornerround"
+                        android:padding="12sp"/>
+                    <TextView
+                        android:id="@+id/tvRequiredTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Select Required Time"
+                        android:textStyle="bold"
+                        android:textColorHint="@color/black"
+                        android:textSize="13dp"
+                        android:inputType="none"
+                        android:drawableLeft="@drawable/outline_calendar_month_24"
+                        android:drawablePadding="10sp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@drawable/edittextcornerround"
+                        android:padding="12sp"/>
+                    <EditText
+                        android:id="@+id/etMedicineName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="13dp"
+                        android:drawableLeft="@drawable/outline_data_table_24"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@drawable/edittextcornerround"
+                        android:padding="12sp"
+                        android:textStyle="bold"
+                        android:textColorHint="@color/black"
+                        android:drawablePadding="10sp"
+                        android:hint="Enter All medicine name and quantity"
+                        android:inputType="textCapWords" />
+
+                    <Button
+                        android:id="@+id/btnSubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="60dp"
+                        android:text="Submit"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:backgroundTint="@color/black"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

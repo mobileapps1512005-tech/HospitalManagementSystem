@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <item
+        android:id="@+id/Billing"
+        android:title="Check Billing"
+        android:icon="@drawable/paymentbill"/>
+
+    <item
+        android:id="@+id/Prescription"
+        android:title="Check Medicine Prescription"
+        android:icon="@drawable/prescription"/>
+
+    <item
+        android:id="@+id/HealthBenefit"
+        android:title="Check Health Benefit Tips"
+        android:icon="@drawable/outline_document_scanner_24"/>
+
+
+    <group
+        android:id="@+id/gr1">
+        <item
+        android:id="@+id/Logout"
+        android:title="Logout"
+        android:icon="@drawable/logout"/>
+    </group>
+
+
+
+</menu>

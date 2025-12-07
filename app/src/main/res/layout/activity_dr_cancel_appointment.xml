@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    tools:context=".DoctorManageTask.DrCancelAppointmentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            app:cardMaxElevation="0dp"
+            android:elevation="4dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="16sp"
+                        android:src="@drawable/doctorimgremovebgpreview"/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/EdName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Please Enter Name"
+                    android:textColorHint="@color/black"
+                    android:textStyle="bold"
+                    android:inputType="text"
+                    android:textSize="13sp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="40dp"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/outline_account_circle_24"
+                    android:padding="12dp"
+                    android:background="@drawable/edittextcornerround"/>
+
+                <EditText
+                    android:id="@+id/EdEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Please Enter Email"
+                    android:textColorHint="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/outline_attach_email_24"
+                    android:padding="12dp"
+                    android:background="@drawable/edittextcornerround"/>
+
+                <Spinner
+                    android:id="@+id/SpinAvailable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/customspinner"/>
+
+                <Spinner
+                    android:id="@+id/SpinAvailableTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/customspinner"/>
+
+                <EditText
+                    android:id="@+id/EdPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Please Enter Number"
+                    android:textColorHint="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:inputType="phone"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/outline_add_call_24"
+                    android:padding="12dp"
+                    android:background="@drawable/edittextcornerround"/>
+
+                <Button
+                    android:id="@+id/BtnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="24dp"
+                    android:layout_marginTop="15dp"
+                    android:textSize="16sp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="70sp"
+                    android:text="Submit"
+                    android:backgroundTint="#FF0000"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+</ScrollView>

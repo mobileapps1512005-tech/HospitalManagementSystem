@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/AdmHome"
+        android:icon="@drawable/home"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/StaffCall"
+        android:icon="@drawable/outline_call_quality_24"
+        android:title="StaffCall"/>
+
+
+
+</menu>

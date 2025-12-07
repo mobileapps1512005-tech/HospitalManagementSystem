@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:elevation="4dp"
+    app:cardElevation="0dp"
+    app:cardMaxElevation="0dp"
+    android:background="@color/white"
+    app:cardBackgroundColor="@color/white"
+    android:layout_margin="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/bloodbag"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1">
+            </View>
+
+            <ImageView
+                android:id="@+id/deleteImg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/delbin"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hospital Name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textAllCaps="true"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:id="@+id/tvHospital"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="3dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Types of Blood"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textAllCaps="true"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:id="@+id/tvBloodType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="blood"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/outline_arrow_drop_up_24"
+                android:id="@+id/UpImg"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/outline_arrow_drop_down_24"
+                android:layout_marginRight="15dp"
+                android:id="@+id/DownImg"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blood Quantity"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textAllCaps="true"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:id="@+id/tvBloodQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="blood"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textAllCaps="true"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="phone"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="15dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

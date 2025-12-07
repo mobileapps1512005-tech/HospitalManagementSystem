@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SplashScreenActivity.LoginActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="true"
+        android:fitsSystemWindows="true"
+        android:fillViewport="true"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:touchscreenBlocksFocus="true"
+            android:paddingBottom="200dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                app:cardElevation="0dp"
+                app:cardMaxElevation="0dp"
+                app:cardCornerRadius="15dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="60dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/logins"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"/>
+
+                    <EditText
+                        android:id="@+id/edEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Please Enter Email Id"
+                        android:textColorHint="@color/black"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/edittextcornerround"
+                        android:padding="12dp"
+                        android:drawableLeft="@drawable/outline_attach_email_24"
+                        android:drawablePadding="10dp"/>
+                    <EditText
+                        android:id="@+id/edPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Please Enter Password"
+                        android:textColorHint="@color/black"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:inputType="textPassword"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittextcornerround"
+                        android:padding="12dp"
+                        android:drawableLeft="@drawable/outline_apps_24"
+                        android:drawablePadding="10dp"/>
+                    <Button
+                        android:id="@+id/btnSignIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sign In"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_marginBottom="0dp"
+                        android:backgroundTint="#FF1300"/>
+                    <Button
+                        android:id="@+id/btnRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sign Up"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:backgroundTint="#000000"/>
+                    <TextView
+                        android:id="@+id/tvForgetPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ForgetPassword?"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="15dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="50dp"
+                        android:textSize="15dp"/>
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

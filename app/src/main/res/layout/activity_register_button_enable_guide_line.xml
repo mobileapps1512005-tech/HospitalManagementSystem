@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".AdminModule.RegisterButtonEnableGuideLineActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="true"
+        android:fitsSystemWindows="true"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Register Button Enable"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="5dp">
+                    </TextView>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1">
+                    </View>
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/aSwitch"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="1dp"
+                    android:text="Admin Permission Delegation Policy\n\n1. Responsibility\nAdmin is authorized to assign, modify, and revoke permissions for all staff members.\n\n
+2. Permission Assignment\n
+Staff will receive system permissions only after the Admin explicitly grants them based on their job role and responsibilities.\n
+\n
+3. Access Limitation\n
+No staff member can access any module or feature without Admin-assigned permission.\n
+\n
+4. UI and System Behavior\n
+Buttons and features remain disabled until the required permission is granted by Admin.\n
+\n
+5. Audit Requirement\n
+All permission changes made by the Admin must be logged for security and compliance.\n
+\n
+6. Compliance\n
+Permission assignment must follow organizational security guidelines and RBAC standards.\n
+">
+                </TextView>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

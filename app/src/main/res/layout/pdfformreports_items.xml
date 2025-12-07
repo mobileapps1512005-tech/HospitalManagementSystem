@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MEDICAL REPORT"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="8dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Details -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hospital Name"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:paddingBottom="2dp"/>
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name : "
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:paddingBottom="2dp"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CheckUp Part Name"
+            android:textStyle="bold"
+            android:paddingBottom="2dp"/>
+        <TextView
+            android:id="@+id/tvPart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Part : "
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:paddingBottom="2dp"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medicine Reports Date"
+            android:textStyle="bold"
+            android:paddingBottom="2dp"/>
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date : "
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:paddingBottom="2dp"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medicine Reports Time"
+            android:textStyle="bold"
+            android:paddingBottom="2dp"/>
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time : "
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:paddingBottom="2dp"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Organ Condition"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+        <TextView
+            android:id="@+id/tvCondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Condition : "
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#888"
+            android:layout_marginBottom="8dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#888"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Description -->
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Organ Description"
+            android:textStyle="bold"
+            android:paddingBottom="4dp"/>
+        <TextView
+            android:id="@+id/tvDescribe"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:paddingBottom="4dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#888"
+            android:layout_marginBottom="8dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#888"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Phone -->
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tvphone"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content"
+            android:text="Phone : "
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

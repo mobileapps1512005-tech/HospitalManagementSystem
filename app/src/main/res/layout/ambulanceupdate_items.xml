@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="0dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="8dp"
+    app:cardMaxElevation="0dp">
+
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Left side image -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ambulance" />
+
+            <!-- Spacer to push images apart -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <!-- Right side image -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/updateImg"
+                android:layout_width="70dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="10sp"
+                android:src="@drawable/edit" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Driver Name"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="name"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginBottom="5sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="15dp">
+
+                <ImageView
+                    android:id="@+id/UpImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/outline_arrow_drop_up_24"
+                    android:layout_marginEnd="8dp"/>
+
+                <ImageView
+                    android:id="@+id/DownImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/outline_arrow_drop_down_24"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="email"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Experience"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvExperience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="experience"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="License"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvLicense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="license"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DriverContact"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvDriverContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="driver"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VehicleNo"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvVehicleNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="vehicleNo"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HospitalName"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvHospitalName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hospitalName"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HospitalNo"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvHospitalNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HospitalNo"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BaseFare"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvBaseFare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BaseFare"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PerKmCost"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvPerKmCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PerKmCost"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EmergencyCost"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvEmergencyCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EmergencyCost"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WithDoctor"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvWithDoctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WithDoctor"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WithoutDoctor"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvWithoutDoctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WithoutDoctor"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WithAC"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvWithAC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="phone"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WithoutAC"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvWithoutAC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WithoutDoctor"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AmbulanceAllPackage"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvAmbulanceAllPackage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AmbulanceAllPackage"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

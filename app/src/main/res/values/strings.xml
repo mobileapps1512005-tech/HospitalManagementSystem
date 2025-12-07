@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AAROGYAM</string>
+    <string name="Open">Open</string>
+    <string name="Close">Open</string>
+    <string name="OpenAdmin">Open</string>
+    <string name="CloseAdmin">Open</string>
+    <string name="Guide">Insurance Claim Process</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

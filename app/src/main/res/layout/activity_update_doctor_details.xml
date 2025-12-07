@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:isScrollContainer="true"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true"
+    tools:context=".DoctorManageTask.UpdateDoctorDetails">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardMaxElevation="0dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="#FFFFFF"
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="9sp"
+            android:layout_marginRight="9sp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/doctorimgremovebgpreview"/>
+
+                <EditText
+                    android:id="@+id/EdName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Please Enter Doctor Name"
+                    android:textColorHint="@color/black"
+                    android:textStyle="bold"
+                    android:inputType="text"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="30dp"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/outline_account_circle_24"
+                    android:padding="12dp"
+                    android:background="@drawable/edittextcornerround"/>
+                <EditText
+                    android:id="@+id/EdEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Please Enter Doctor Email"
+                    android:textColorHint="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:inputType="text"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/outline_attach_email_24"
+                    android:padding="12dp"
+                    android:background="@drawable/edittextcornerround"/>
+                <Spinner
+                    android:id="@+id/SpinQualification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/customspinner"/>
+                <Spinner
+                    android:id="@+id/SpinExperience"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/customspinner"/>
+                <Spinner
+                    android:id="@+id/SpinSpecial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/customspinner"/>
+                <Spinner
+                    android:id="@+id/SpinAvailable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/customspinner"/>
+                <Spinner
+                    android:id="@+id/SpinAvailableTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/customspinner"/>
+                <EditText
+                    android:id="@+id/EdPhone"
+                    android:inputType="phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Please Enter Doctor Number"
+                    android:textColorHint="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/outline_add_call_24"
+                    android:padding="12dp"
+                    android:background="@drawable/edittextcornerround"/>
+                <Button
+                    android:id="@+id/BtnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="15sp"
+                    android:textSize="20dp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:text="Update"
+                    android:layout_marginBottom="60dp"
+                    android:backgroundTint="#FF1100"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

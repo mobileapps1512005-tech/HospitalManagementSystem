@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:isScrollContainer="false"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true"
+    tools:context=".AddCanteenDetailManage.CanteenOwnerAcceptFoodActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            android:elevation="4dp"
+            app:cardMaxElevation="4dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_margin="9dp"
+            android:layout_marginRight="9dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/foods"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="5dp"/>
+                <EditText
+                    android:id="@+id/edName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Customer Name"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="15sp"
+                    android:background="@drawable/edittextcornerround"
+                    android:padding="12sp"
+                    android:textColorHint="@color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/outline_fastfood_24"
+                    android:drawablePadding="10sp"/>
+                <EditText
+                    android:id="@+id/edItemsName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Food Name "
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10sp"
+                    android:background="@drawable/edittextcornerround"
+                    android:padding="12sp"
+                    android:textColorHint="@color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/outline_fastfood_24"
+                    android:drawablePadding="10sp"/>
+                <Spinner
+                    android:id="@+id/SpinQuantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/customspinner"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10sp"/>
+                <Spinner
+                    android:id="@+id/SpinFloor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/customspinner"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10sp"/>
+                <EditText
+                    android:id="@+id/edBad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Your Bad Number"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10sp"
+                    android:background="@drawable/edittextcornerround"
+                    android:padding="12sp"
+                    android:textColorHint="@color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/outline_fastfood_24"
+                    android:drawablePadding="10sp"/>
+                <EditText
+                    android:id="@+id/edPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Please Enter Contact Number"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10sp"
+                    android:background="@drawable/edittextcornerround"
+                    android:padding="12sp"
+                    android:textColorHint="@color/black"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/outline_fastfood_24"
+                    android:drawablePadding="10sp"/>
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FF1200"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="50sp"
+                    android:text="Submit"
+                    android:textStyle="bold"
+                    android:textSize="15dp">
+                </Button>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</ScrollView>

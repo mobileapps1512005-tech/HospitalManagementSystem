@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="0dp"
+    app:cardMaxElevation="0dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="15dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_margin="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Left side image -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/pharmacydetailspreview" />
+
+            <!-- Spacer to push images apart -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <!-- Right side image -->
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:id="@+id/Switche"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pharmacy Name"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="name"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginBottom="5sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:gravity="end"
+                android:layout_marginRight="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="15dp">
+
+                <ImageView
+                    android:id="@+id/UpImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/outline_arrow_drop_up_24"
+                    android:layout_marginEnd="8dp"/>
+
+                <ImageView
+                    android:id="@+id/DownImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/outline_arrow_drop_down_24"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pharmacy Email"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="email"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Duty Name"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvDuty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="duty"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Number"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="contact"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="locatiion"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Qualification"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvQualification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="qualication"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Emergency Services"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvEmergencyService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="services"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Return Policy"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvReturn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="returns"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Discount"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvDiscount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="discount"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Required Time"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="time"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delivery Type"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvHomeDelivery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="home"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10sp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
